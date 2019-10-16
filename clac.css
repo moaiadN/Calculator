@@ -1,0 +1,105 @@
+html{
+  background: #fff;
+}
+body {
+    font-size: 64px;
+   }
+  
+  button {
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px;
+    grid-template-areas: 
+    "header header header header" 
+    "main main main main" 
+    "main main main main" 
+    "main main main main" 
+    "main main main main" 
+    "main main main main";
+    background-color: black;
+    width: 32%;
+    margin: 50px auto;
+    border-radius: 15px;
+    padding: 20px
+  }
+  :focus{
+  outline: none;
+  }
+  .item-header {
+    grid-area: header;
+    color: white;
+    text-align: right;
+    width: 100%;
+    font-size: 55px;
+    /* font-weight: 200; */
+    background: #000;
+    border: none;
+  }
+  .item-header::placeholder{
+    color: #fff;
+  }
+  #globalAnswer {
+    background-color: black;
+    font-size: 1px;
+  }
+  
+  #currentValue {
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    text-align: right;
+  }
+  
+  button.btn {
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 50%;
+  }
+  
+  button.orange {
+    background-color: orange;
+  }
+  
+  button.orange:focus {
+    background-color: white;
+    color: orange
+  }
+  
+  button.silver {
+    background-color: silver;
+    color: black;
+  }
+  
+  button.silver:focus {
+    background-color: white;
+    color: black
+  }
+  
+  button.equals {
+    background-color: orange;
+  }
+  
+  button.equals:focus {
+    background-color: white;
+    color: orange
+  }
+  
+  button.zero {
+    text-align: left;
+    padding-left: 32px;
+    grid-row: 6;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    border-radius: 50px;
+  }
+  
